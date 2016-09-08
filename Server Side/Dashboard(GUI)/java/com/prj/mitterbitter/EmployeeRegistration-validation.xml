@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC 
+  "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+  "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+  
+<validators>
+  <field name="employeeName">
+        <field-validator type="requiredstring">
+            <message>Employee Name is required</message>
+        </field-validator>
+        <field-validator type="required">
+            <message>Employee Name is required</message>
+        </field-validator>
+  </field>
+  <field name="employeeAdd">
+        <field-validator type="requiredstring">
+            <message>Employee Address is required</message>
+        </field-validator>
+        <field-validator type="required">
+            <message>Employee Name is required</message>
+        </field-validator>
+  </field>
+  <field name="employeeDOB">
+    <field-validator type="date">
+        <param name="min">01/01/1990</param>
+        <param name="max">01/01/2000</param>
+        <message>Joining date must be supplied between ${min} and ${max}</message>
+    </field-validator>
+    <field-validator type="required">
+        <message>Date is required</message>
+    </field-validator>
+  </field>
+  <field name="handsetImei">
+        <field-validator type="regex">
+             <param name="expression">^[0-9]{15}$</param>
+             <message>IMEI number must be of 15 digits</message>
+        </field-validator>
+  </field>
+  <field name="handsetModel">
+       <field-validator type="requiredstring">
+             <message>Model is required </message>
+        </field-validator>
+  </field>
+  <field name="handsetType">
+       <field-validator type="requiredstring">
+             <message>Type is required </message>
+        </field-validator>
+  </field>
+  <field name="handsetProvider">
+       <field-validator type="requiredstring">
+             <message>Handset Provider is required </message>
+        </field-validator>
+  </field>
+  <field name="carrierProvider">
+       <field-validator type="requiredstring">
+             <message>Carrier Provider is required </message>
+        </field-validator>
+  </field>
+</validators> 
