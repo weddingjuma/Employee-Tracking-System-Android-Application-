@@ -13,3 +13,7 @@ D) MySQL & SQLite (Mobile Database): MySQL is one of the most popular relational
 Database has become the world's most popular open source Database, because it is free and available on almost all the platforms. The MySQL can run on UNIX, window, and Mac OS.
 
 Mobile Module:- 1) Monitoring and alerting about SMS 2) Monitoring and alerting about calls 3) Monitoring and alerting about Geo-Location 4) Monitoring and alerting about WEB usage Web Application Module:- 1) Monitoring servlet (Non-UI)(MBServer) 2) Dashboard servlet (UI)(MyProject)
+
+How to run:-
+In client folder, you will find android code for run client side application suppose to send call, sms, web history details to the server(Need to change server IP as respective).
+Server side folder will see java servlet code. It shows the dashboard contains all employees details(ie. SMS, Web, Call details) on  JSP pages. Here servlet used to insert and extract emplyee details from database, JSP used to create a Graphical dashboard and strut framework used for mapping jsp and servlet pages.
